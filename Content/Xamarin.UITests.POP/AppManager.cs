@@ -8,15 +8,15 @@ namespace Xamarin.UITests.POP
     {
         private static readonly char PathSeparator = Path.DirectorySeparatorChar;
 
-        private const string AndroidProject = "AppName.Droid";
-        private const string ApkFile = "com.companyname.appname.DEV-Signed.apk";
+        private const string AndroidProject = "AppName.Droid";  // TODO: replace AppName with the Android project name
+        private const string ApkFile = "com.companyname.appname.DEV-Signed.apk";  // TODO: replace this with the path to the apk
 
         private static readonly string ApkPath = $"..{PathSeparator}..{PathSeparator}..{PathSeparator}" +
                                                  $"..{PathSeparator}..{PathSeparator}src{PathSeparator}" +
                                                  $"{AndroidProject}{PathSeparator}bin{PathSeparator}" +
                                                  $"DebugUITest{PathSeparator}{ApkFile}";
 
-        private const string IOSProject = "AppName.iOS";
+        private const string IOSProject = "AppName.iOS";  // TODO: replace AppName with the iOS project name
         private static readonly string AppFile = $"{IOSProject}.app";
         private static readonly string AppPath = $"..{PathSeparator}..{PathSeparator}..{PathSeparator}" +
                                                  $"..{PathSeparator}..{PathSeparator}src{PathSeparator}" +

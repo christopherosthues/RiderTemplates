@@ -31,7 +31,7 @@
       "description" : "The name of the Android project",
       "datatype" : "string",
       "replaces" : "AppName.Droid",
-      "isRequired" : "true",
+      "isRequired" : "false",
       "defaultValue" : "AppName.Droid"
     },
     "iOSProject" : {
@@ -39,7 +39,7 @@
       "description" : "The name of the iOS project",
       "datatype" : "string",
       "replaces" : "AppName.iOS",
-      "isRequired" : "true",
+      "isRequired" : "false",
       "defaultValue" : "AppName.iOS"
     },
     "apkFileName" : {
@@ -47,7 +47,7 @@
       "description" : "The name of the generated Android apk file",
       "datatype" : "string",
       "replaces" : "com.companyname.appname",
-      "isRequired" : "true",
+      "isRequired" : "false",
       "defaultValue" : "com.companyname.appname"
     }
   },
