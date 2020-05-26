@@ -1,0 +1,81 @@
+{
+  "author" : "Christopher Osthues",
+  "classifications": [ "Xamarin", "Test", "UI Test", "POP", "Library" ],
+  "name" : "Xamarin POP UI Test",
+  "description" : "",
+  "identity" : "Xamarin.UITests.POP",
+  "shortName" : "xamarinuitestspop",
+  "defaultName" : "CrossPlatform.UITests.POP",
+  "tags" : {
+    "type" : "project",
+    "language" : "C#",
+    "platform" : "Xamarin",
+    "xamarinPlatform": "Cross Platform UI"
+  },
+  "sourceName" : "Xamarin.UITests.POP",
+  "preferNameDirectory" : "true",
+  "guids" : [
+    "FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF"
+  ],
+  "symbols" : {
+    "Framework" : {
+      "type" : "parameter",
+      "description" : "The target framework for the project.",
+      "datatype" : "text",
+      "replaces" : "v4.8",
+      "isRequired" : "true",
+      "defaultValue" : "<FullTargetFramework>"
+    },
+    "AndroidProject" : {
+      "type" : "parameter",
+      "description" : "The name of the Android project",
+      "datatype" : "string",
+      "replaces" : "AppName.Droid",
+      "isRequired" : "true",
+      "defaultValue" : "AppName.Droid"
+    },
+    "iOSProject" : {
+      "type" : "parameter",
+      "description" : "The name of the iOS project",
+      "datatype" : "string",
+      "replaces" : "AppName.iOS",
+      "isRequired" : "true",
+      "defaultValue" : "AppName.iOS"
+    },
+    "apkFileName" : {
+      "type" : "parameter",
+      "description" : "The name of the generated Android apk file",
+      "datatype" : "string",
+      "replaces" : "com.companyname.appname",
+      "isRequired" : "true",
+      "defaultValue" : "com.companyname.appname"
+    }
+  },
+  "primaryOutputs" : [
+    { "path" : "Xamarin.UITests.POP.csproj" },
+    { "path" : "AppManager.cs" },
+    { "path" : "Navigation.cs" },
+    { "path" : "PlatformQuery.cs" },
+    { "path" : "PageObjects/AppPageObject.cs" },
+    { "path" : "PageObjects/BasePageObject.cs" },
+    { "path" : "Tests/AppTests.cs" },
+    { "path" : "Tests/BaseTestFixture.cs" }
+  ],
+  "postActions": [
+    {
+      "description" : "Opens AppManager.cs in the editor",
+      "manualInstructions" : [],
+      "actionId" : "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
+      "args" : {
+        "files" : "1"
+      },
+      "continueOnError" : true
+    },
+    {
+      "description" : "Restore NuGet packages required by this project.",
+      "manualInstructions" : [],
+      "actionId" : "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError" : true
+    }
+  ]
+}
