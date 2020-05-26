@@ -1,13 +1,16 @@
 {
   "author": "Christopher Osthues",
   "classifications": [
-    "Xamarin"
+    "Xamarin", "UI Test", "Test"
   ],
   "name": "Xamarin UI Test IDs",
   "identity": "Xamarin.UITests.TestIds",
   "shortName": "xamarintestids",
-  "tags": {
-    "language": "C#"
+  "tags" : {
+    "type" : "project",
+    "language" : "C#",
+    "platform" : "Xamarin",
+    "xamarinPlatform": "Cross Platform UI"
   },
   "sourceName": "Xamarin.UITests.TestIds",
   "preferNameDirectory": "true",
