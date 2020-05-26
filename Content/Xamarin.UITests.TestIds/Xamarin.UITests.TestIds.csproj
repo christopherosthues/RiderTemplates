@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyTitle>Xamarin.UITests.TestIds</AssemblyTitle>
+        <Product>Xamarin.UITests.TestIds</Product>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+</Project>
